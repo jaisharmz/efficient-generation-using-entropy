@@ -185,7 +185,7 @@ def generate_large_only_naive(prompt, max_new_tokens):
 if __name__ == "__main__":
     # --- Step 1: Calibrate Threshold ---
     calibrated_threshold = calculate_and_set_entropy_threshold(
-        model=large_model, tokenizer=tokenizer, percentile=70
+        model=large_model, tokenizer=tokenizer, percentile=50
     )
     
     # --- Step 2: Evaluate on a Sample Dataset ---
